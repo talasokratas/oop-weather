@@ -1,0 +1,16 @@
+{
+  "name": "akademija/oop",
+  "description": "OOP demo project",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.2",
+    "twig/twig": "^2.0",
+    "symfony/http-foundation": "^4.2",
+    "ext-json": "*"
+  }
+}
