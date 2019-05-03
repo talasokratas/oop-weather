@@ -26,7 +26,10 @@ switch ($uriSegments[2]) {
     default: $renderInfo = $controller->getTodayWeather(null);
     break;
 }
+
 $renderInfo['context']['resources_dir'] = '/'. $uriSegments[1] .'/src/Weather/Resources';
+$renderInfo['context']['path'] =  '/' . $uriSegments[1];
+
 
 $content = $twig->render($renderInfo['template'], $renderInfo['context']);
 
