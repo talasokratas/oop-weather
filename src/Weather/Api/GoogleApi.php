@@ -21,6 +21,12 @@ class GoogleApi implements DataProvider
         return $today;
     }
 
+    /**
+     * @param \DateTime $from
+     * @param \DateTime $to
+     * @return array
+     * @throws \Exception
+     */
     public function selectByRange(\DateTime $from, \DateTime $to): array
     {
         $result  = [];
