@@ -7,10 +7,10 @@ use Weather\Model\NullWeather;
 
 class StartPage
 {
-    public function getTodayWeather(): array
+    public function getTodayWeather($provider): array
     {
         try {
-            $service = new Manager();
+            $service = new Manager($provider);
             $weather = $service->getTodayInfo();
         } catch (\Exception $exp) {
             $weather = new NullWeather();
@@ -22,7 +22,7 @@ class StartPage
     public function getWeekWeather(): array
     {
         try {
-            $service = new Manager();
+            $service = new Manager($provider);
             $weathers = $service->getWeekInfo();
         } catch (\Exception $exp) {
             $weathers = [];

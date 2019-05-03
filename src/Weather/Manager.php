@@ -13,6 +13,20 @@ class Manager
      */
     private $transporter;
 
+    /**
+     * Manager constructor.
+     * @param DataProvider $transporter
+     */
+    public function __construct(?string $provider)
+    {
+        if($provider === 'Google' || $provider === 'JSON') {
+            $class = $provider . 'Api';
+            $this->transporter = new $class();
+        }
+
+    }
+
+
     public function getTodayInfo(): Weather
     {
         return $this->getTransporter()->selectByDate(new \DateTime());

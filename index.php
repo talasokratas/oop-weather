@@ -14,13 +14,16 @@ $loader = new FilesystemLoader('View', __DIR__ . '/src/Weather');
 $twig = new Environment($loader, ['cache' => __DIR__ . '/cache', 'debug' => true]);
 
 $controller = new StartPage();
-switch ($request->getRequestUri()) {
-    case '/week':
-        $renderInfo = $controller->getWeekWeather();
+$uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+
+switch ($uriSegments[2]) {
+    case 'week':
+        $renderInfo = $controller->getWeekWeather($uriSegments[3]);
         break;
-    case '/':
-    default:
-        $renderInfo = $controller->getTodayWeather();
+    case 'day':
+        $renderInfo = $controller->getTodayWeather($uriSegments[3]);
+        break;
+    default: $renderInfo = $controller->getTodayWeather(null);
     break;
 }
 $renderInfo['context']['resources_dir'] = 'src/Weather/Resources';
