@@ -7,7 +7,8 @@ class Weather
     private $map = [
         1 => 'cloud',
         2 => 'cloud-rain',
-        3 => 'sun'
+        3 => 'sun',
+        4 => 'wind'
     ];
 
     /**

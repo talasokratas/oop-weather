@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f07ae5a-9e67-44e3-94b0-29abd5a7db28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Weather/Api/GoogleApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weather/Api/GoogleApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Weather/Api/JsonApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weather/Api/JsonApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Weather/Model/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weather/Model/Weather.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,28 +32,30 @@
           <entry key="htaccess" value="1" />
           <entry key="json" value="4" />
           <entry key="md" value="1" />
-          <entry key="php" value="12" />
+          <entry key="php" value="14" />
+          <entry key="twig" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="12" />
+          <entry key="PHP" value="14" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SmartyConfig" value="1" />
+          <entry key="Twig" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="2" />
           <entry key="dummy" value="3" />
-          <entry key="php" value="748" />
+          <entry key="php" value="923" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="748" />
+          <entry key="PHP" value="923" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SmartyConfig" value="2" />
         </counts>
@@ -68,18 +70,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Weather/Api/DbRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="50" column="10" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="61" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Weather/Api/GoogleApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="-63">
               <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="e#31#48#0#PHP" expanded="true" />
@@ -97,16 +90,43 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Weather/Controller/StartPage.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Weather/Api/JsonApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="642">
+              <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding>
-                <element signature="e#38#58#0#PHP" expanded="true" />
+                <element signature="e#6#88#0#PHP" expanded="true" />
+                <element signature="e#114#144#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="e#50#96#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Weather/Model/Weather.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Weather/View/range-weather.twig">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -121,23 +141,9 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Weather/Api/JsonApi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-              <folding>
-                <element signature="e#114#144#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Weather/Model/Weather.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-690" />
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/Weather/View/weather-block.twig">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -148,18 +154,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Weather/Api/Db/Data.json">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding>
-                <element signature="e#50#96#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -181,6 +175,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/Weather/Controller/StartPage.php" />
         <option value="$PROJECT_DIR$/src/Weather/Api/GoogleApi.php" />
+        <option value="$PROJECT_DIR$/src/Weather/Model/Weather.php" />
         <option value="$PROJECT_DIR$/src/Weather/Api/JsonApi.php" />
       </list>
     </option>
@@ -244,14 +239,6 @@
               <item name="oop-weather" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Weather" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="Db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oop-weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oop-weather" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,6 +247,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Weather" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oop-weather" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oop-weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Weather" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oop-weather" type="b2602c69:ProjectViewProjectNode" />
@@ -312,12 +306,12 @@
       <updated>1556797542011</updated>
       <workItem from="1556797543257" duration="1297000" />
       <workItem from="1556798889002" duration="614000" />
-      <workItem from="1556821341762" duration="12673000" />
+      <workItem from="1556821341762" duration="13575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14584000" />
+    <option name="totallyTimeSpent" value="15486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="891" y="23" width="1560" height="1276" extended-state="0" />
@@ -379,16 +373,6 @@
     <entry file="file://$PROJECT_DIR$/src/Weather/Model/NullWeather.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weather/Manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="31" column="66" lean-forward="true" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-          <folding>
-            <element signature="e#27#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Weather/Controller/StartPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -396,23 +380,6 @@
           <folding>
             <element signature="e#38#58#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="e#50#96#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weather/Api/DataProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="73" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="19" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -426,17 +393,52 @@
     <entry file="file://$PROJECT_DIR$/src/Weather/Api/Db/Data.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weather/Manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="31" column="66" lean-forward="true" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+          <folding>
+            <element signature="e#27#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weather/Api/DataProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="73" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="19" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Weather/Model/Weather.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690" />
+        <state relative-caret-position="142">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weather/View/range-weather.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#50#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Weather/Api/Db/Weather.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weather/View/weather-block.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Weather/Api/GoogleApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="-63">
           <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="e#31#48#0#PHP" expanded="true" />
@@ -446,9 +448,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Weather/Api/JsonApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        <state relative-caret-position="642">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
             <element signature="e#114#144#0#PHP" expanded="true" />
           </folding>
         </state>

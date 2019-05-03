@@ -61,10 +61,35 @@ class JsonApi implements DataProvider
             $record->setDate(new \DateTime($item['date']));
             $record->setDayTemp($item['high']);
             $record->setNightTemp($item['low']);
-            $record->setSky($item['text']);
+            $record->setSky($this->DescriptionToIcon($item['text']));
             $result[] = $record;
         }
         return $result;
     }
+
+    private function DescriptionToIcon(string $description) :int
+    {
+        switch (trim($description))
+        {
+            case 'Partly Cloudy':
+            case 'Mostly Cloudy':
+            case 'Cloudy':
+                $iconKey = 1;
+                break;
+            case 'Scattered Showers':
+                $iconKey = 2;
+                break;
+            case 'Sunny':
+                $iconKey = 3;
+                break;
+            case 'Breezy':
+                $iconKey = 4;
+            break;
+            default: $iconKey = 1;
+                break;
+        }
+        return $iconKey;
+    }
+
 
 }
