@@ -37,4 +37,9 @@ class GoogleApi
 
         return $now;
     }
+
+    public function selectByDate()
+    {
+
+    }
 }

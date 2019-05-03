@@ -19,9 +19,9 @@ class Manager
      */
     public function __construct(?string $provider)
     {
-        if($provider === 'Google' || $provider === 'JSON') {
-            $class = $provider . 'Api';
-            $this->transporter = new $class();
+        if($provider === 'google' || $provider === 'json') {
+            $class = 'Weather\Api\\' . ucfirst($provider) . 'Api';
+            $this->transporter = new $class;
         }
 
     }
