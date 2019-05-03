@@ -2,21 +2,41 @@
 
 namespace Weather\Api;
 
+use DateInterval;
+use DatePeriod;
 use Weather\Model\NullWeather;
 use Weather\Model\Weather;
 
-class GoogleApi
+class GoogleApi implements DataProvider
 {
     /**
      * @return Weather
      * @throws \Exception
      */
-    public function getToday()
+    public function selectByDate(\DateTime $date): Weather
     {
         $today = $this->load(new NullWeather());
-        $today->setDate(new \DateTime());
+        $today->setDate($date);
 
         return $today;
+    }
+
+    public function selectByRange(\DateTime $from, \DateTime $to): array
+    {
+        $result  = [];
+        $interval = DateInterval::createFromDateString('1 day');
+        $period = new DatePeriod($from, $interval, $to);
+
+        foreach ($period as $date) {
+            $record = new Weather();
+            $record->setDate($date);
+            $record->setDayTemp(random_int(5 - $base, 5 + $base));
+            $record->setNightTemp(random_int(-5 - abs($base), -5 + abs($base)));
+            $record->setSky(random_int(1, 3));
+            $result[] = $record;
+        }
+
+        return $result;
     }
 
     /**
@@ -38,8 +58,5 @@ class GoogleApi
         return $now;
     }
 
-    public function selectByDate()
-    {
 
-    }
 }

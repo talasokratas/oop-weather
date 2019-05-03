@@ -19,7 +19,7 @@ class StartPage
         return ['template' => 'today-weather.twig', 'context' => ['weather' => $weather]];
     }
 
-    public function getWeekWeather(): array
+    public function getWeekWeather($provider): array
     {
         try {
             $service = new Manager($provider);

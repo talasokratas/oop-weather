@@ -20,7 +20,7 @@ switch ($uriSegments[2]) {
     case 'week':
         $renderInfo = $controller->getWeekWeather($uriSegments[3]);
         break;
-    case 'day':
+    case 'today':
         $renderInfo = $controller->getTodayWeather($uriSegments[3]);
         break;
     default: $renderInfo = $controller->getTodayWeather(null);
